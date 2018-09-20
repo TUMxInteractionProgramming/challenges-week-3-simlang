@@ -156,6 +156,7 @@ li img {
     top: 64px;
     bottom: 72px;
     overflow: auto;
+    padding: 8px 0px;
 }
 
 .message {
