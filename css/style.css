@@ -43,21 +43,35 @@ button, strong {
     color: white;
     height: 64px;
     width: 100%;
-
     font-size: 20px;
     font-weight: normal;
+    line-height: 64px;
     letter-spacing: 0.15;
 
     position: fixed;
 
     display: flex;
-    align-items: center;
-    padding-left: 16px;
-    padding-right: 16px; 
+    align-items: baseline;
+    
+    padding:0px 16px; 
 }
 
-.app-bar img {
+#left-app-bar img {
     align-self: flex-end;
+}
+
+#right-app-bar img {
+    align-self: center;
+    position: fixed;
+    right: 16px;
+}
+
+#channel-name {
+    padding-right: 8px;
+}
+
+#location-link {
+    color: white;
 }
 
 /* CHANNELS LIST */
@@ -210,6 +224,7 @@ li img {
 /* CHAT BAR */
 
 #emojis {
+    display: none;
     position: absolute;
     bottom: 54px;
     background-color: white;
